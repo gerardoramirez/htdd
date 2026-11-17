@@ -16,7 +16,7 @@ The future belongs to those who understand people before they build for them. Hu
 
 A working map of the method, terms, and practices is in [00_METHOD_INDEX.md](00_METHOD_INDEX.md). What a public-beta reader may rely on is in [BETA.md](BETA.md).
 
-Human Truth Driven Design (HTDD) is both a philosophy and a methodology for creating products that begin with enduring truths about people before they begin with technology.
+Human Truth Driven Design (HTDD) is an open-source framework, philosophy, and methodology for creating products that begin with enduring truths about people before they begin with technology. The framework, methodology, and reusable starter kit in this repository are available under the [Apache License 2.0](LICENSE).
 
 As AI accelerates our ability to create, HTDD helps ensure we create things that genuinely improve people's lives.
 
