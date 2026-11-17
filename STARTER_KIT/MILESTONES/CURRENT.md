@@ -12,4 +12,6 @@ Governing milestone:
 
 None yet.
 
-`001_EXAMPLE_MILESTONE` is a template. Copy it when the first real milestone exists, write that milestone's still-in-force list, and replace "None yet." with the new folder name. Until then, do not implement from the example.
+`001_EXAMPLE_MILESTONE` is a template. Copy it when the first real milestone exists. A draft folder may be renamed until this file points at it. After it governs, the name stays. Write that milestone's still-in-force list, and replace "None yet." with the new folder name. Until then, do not implement from the example.
+
+When `PROJECT.yaml` sets `experience_arc` to `false`, the governing milestone does not require arc files. When `PROJECT.yaml` is missing, arc files bind when they exist.

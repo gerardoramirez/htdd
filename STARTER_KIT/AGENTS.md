@@ -2,6 +2,28 @@
 
 This is the operational instruction file for work in this folder.
 
+## Init
+
+On a new copy, start at `INIT.md`. `PROJECT.yaml` holds `builder`, `bootstrap`, and `experience_arc`. A person sets them. You may record an answer. You may not choose one, rank `skilled_builder` above `learning_the_ropes`, or nudge toward either label.
+
+If any of those three values is `unset`, or is not one of the allowed values, stop. Read only `INIT.md`. Do not fill a bootstrap, do not draft a milestone, and do not invent meaning.
+
+`builder` is a record for later guidance. It does not choose the bootstrap and it does not choose the artifact chain. Do not write a second set of rules from it.
+
+When `bootstrap` is `founder`, the bootstrap is `PROJECT_BOOTSTRAP.md`. When it is `internal_b2b`, the bootstrap is `PROJECT_BOOTSTRAP_INTERNAL.md`. Leave the other file as the blank template. Do not copy answers across.
+
+When `experience_arc` is `true`, the arc files named below bind once a milestone governs. When it is `false`, those files are not required. Do not invent an arc, a beat, a gift, or an Arc Steward to fill them. The milestone summary says this milestone is not an experience arc.
+
+If `PROJECT.yaml` is missing, this copy was made before init. Do not treat the absence as `experience_arc: false`. Follow the rules below. Do not invent a `PROJECT.yaml` that turns the arc off. A person may add the file later without overwriting filled work.
+
+An `[open]` mark is an unanswered line. Do not close it by writing an answer.
+
+## Day one
+
+Before a governing milestone exists, follow `INIT.md`, then only the bootstrap it names, then `HUMAN_TRUTH_DISCOVERY.md`. Do not implement from `001_EXAMPLE_MILESTONE`. A draft milestone folder may be renamed until `MILESTONES/CURRENT.md` points at it.
+
+## Once a milestone is governing
+
 Before doing implementation work, read `MILESTONES/CURRENT.md`. It names one governing milestone. Read only that folder.
 
 Do not hardcode a milestone folder name from memory or from an older copy of this file. Do not sort `MILESTONES/` to guess. Do not read any other milestone folder, `MILESTONES/archive/`, or `MILESTONES/archive/RELEASE_LOG.md`.
@@ -21,22 +43,25 @@ A quality pass restates the milestone's job. A quality-pass milestone cannot add
 Then read:
 
 1. `SOURCE.md`
-2. `PROJECT_BOOTSTRAP.md`
+2. The bootstrap `PROJECT.yaml` names. `founder` is `PROJECT_BOOTSTRAP.md`. `internal_b2b` is `PROJECT_BOOTSTRAP_INTERNAL.md`. If `PROJECT.yaml` is missing, read `PROJECT_BOOTSTRAP.md`.
 3. That milestone's `MILESTONE_SUMMARY.md`, including its release entries, and `BOARD_SNAPSHOT.md`
 4. That milestone's `implementation_artifacts/` folder, when it exists
 
 Treat `IMPLEMENTATION_GOVERNANCE_NOTE.md` as the entrypoint.
-Treat `PROTOTYPE_STATE_MAP.md`, `TRANSITION_SPEC.md`, `GUARDRAIL_CHECKLIST.md`, and `PROTOTYPE_REVIEW_SCRIPT.md` as binding prototype governance.
 Treat `PROTOTYPE_BUILD_BRIEF.md` as the build-facing summary.
 Treat `PROTOTYPE_IMPLEMENTATION_TICKETS.md` as the ticket source, but do not implement tickets that conflict with the governance files.
+
+`PROTOTYPE_STATE_MAP.md`, `TRANSITION_SPEC.md`, `GUARDRAIL_CHECKLIST.md`, and `PROTOTYPE_REVIEW_SCRIPT.md` bind only when `PROJECT.yaml` sets `experience_arc` to `true`. When it is `false`, those files are not required. Do not invent an arc to fill them. When `PROJECT.yaml` is missing, they bind when they exist.
+
+Notes in this file that name an arc, a beat, a gift, Product Gravity, or an Arc Steward apply when `experience_arc` is `true`. When it is `false`, skip those notes. Exclusions, the status record, and the ticket completion classes still apply.
 
 Incoming implementation artifacts belong in the governing milestone's `implementation_artifacts/` folder. Do not put them in `METHOD/`, `HUMAN_TRUTHS/`, `EXPERIENCE_BOARDS/`, or a guessed later milestone folder.
 
 ## Incomplete bootstrap
 
-If `PROJECT_BOOTSTRAP.md` is incomplete and the governing milestone's implementation artifact chain is complete, proceed from that chain.
+If the named bootstrap is incomplete and the governing milestone's implementation artifact chain is complete, proceed from that chain.
 
-Do not invent founder experience, human impact, or success language to fill `PROJECT_BOOTSTRAP.md`. Incomplete bootstrap is later founder work. It is not an implementation blocker when the milestone chain is already complete.
+Do not invent founder experience, team experience, human impact, or success language to fill the bootstrap. Incomplete bootstrap is later human work. It is not an implementation blocker when the milestone chain is already complete.
 
 If both the bootstrap and the milestone chain are incomplete, stop. Do not invent governing meaning.
 

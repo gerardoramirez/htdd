@@ -16,7 +16,7 @@ These pages are settled enough to guide a team:
 - [Experience Boards](METHODOLOGY/EXPERIENCE_BOARDS.md), [Experience Arcs](METHODOLOGY/EXPERIENCE_ARCS.md), [Experience Rhythm](METHODOLOGY/EXPERIENCE_RHYTHM.md), [Product Gravity](METHODOLOGY/PRODUCT_GRAVITY.md), [Prototype Practice](METHODOLOGY/PROTOTYPE_PRACTICE.md), and [Entrusted Source](METHODOLOGY/ENTRUSTED_SOURCE.md)
 - [Project Structure](METHODOLOGY/PROJECT_STRUCTURE.md) and the [starter kit](STARTER_KIT/README.md)
 
-Start a product by copying `STARTER_KIT/`. The product then owns those files. `MILESTONES/CURRENT.md` names no governing milestone until the project writes one. `001_EXAMPLE_MILESTONE` is a template. A first milestone names the exclusions that product binds. It does not inherit another product's list.
+Start a product by copying `STARTER_KIT/`. On a new copy, a person starts at [INIT.md](STARTER_KIT/INIT.md) and answers there before either bootstrap. The product then owns those files. `MILESTONES/CURRENT.md` names no governing milestone until the project writes one. `001_EXAMPLE_MILESTONE` is a template. A first milestone names the exclusions that product binds. It does not inherit another product's list.
 
 ## What is still a draft
 

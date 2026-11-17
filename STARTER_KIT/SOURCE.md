@@ -2,7 +2,7 @@
 
 This folder is a copy of the HTDD Starter Kit.
 
-Files at the kit root are this project's working copy. Fill them in here. Agents start at [AGENTS.md](AGENTS.md).
+Files at the kit root are this project's working copy. Fill them in here. A new copy starts at [INIT.md](INIT.md). Agents start at [AGENTS.md](AGENTS.md), which sends them to `INIT.md` while [PROJECT.yaml](PROJECT.yaml) is still unset.
 
 [METHOD/](METHOD/) is reserved for copies of HTDD methodology. Do not write product work there. When `FOUNDATIONS/`, `METHODOLOGY/`, the canonical `HUMAN_TRUTHS/` registry, or the methodology `DISCOVERIES/` log are ready, copy those trees into the matching children of `METHOD/`. See [README.md](README.md#updating).
 

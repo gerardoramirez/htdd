@@ -368,7 +368,7 @@ Also valid: `docs/`, `htdd/`, `design/htdd/`, or any path the team already uses 
 1. Copy the folder to the destination.
 2. Fill in `SOURCE.md` with the copy date and, optionally, a commit or tag from this repository.
 3. Add one sentence to the product README so people and agents can find the work: "Human Truth work lives in `docs/htdd/`." Use the path you chose.
-4. Start at `PROJECT_BOOTSTRAP.md`. Agents start at `AGENTS.md`. Do not copy the kit over a folder that already has project work. If the kit later changes, merge by hand. Copies that already have the kit follow [Existing product repositories](STARTER_KIT/README.md#existing-product-repositories).
+4. A person starts at `INIT.md`. Agents start at `AGENTS.md`, which sends them to `INIT.md` while `PROJECT.yaml` is unset. Do not copy the kit over a folder that already has project work. If the kit later changes, merge by hand. Copies that already have the kit follow [Existing product repositories](STARTER_KIT/README.md#existing-product-repositories).
 
 Steps and file list: [STARTER_KIT/README.md](STARTER_KIT/README.md).
 

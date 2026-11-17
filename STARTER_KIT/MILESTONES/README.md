@@ -22,7 +22,7 @@ Do not put `source_truths/` or `experience_boards/` inside a milestone. Point at
 Milestones should not replace `HUMAN_TRUTHS/`, `PRODUCT_PRINCIPLES.md`, `ETHICAL_AI_PRINCIPLES.md`, `LESSONS_LEARNED.md`, `EXPERIENCE_BOARDS/`, `DISCOVERIES/`, or `METHOD/`.
 They package a point-in-time decision state so future work can proceed without reopening every prior conversation.
 
-Number folders `001_NAME/`. Replace the example milestone folder when the first real milestone exists, and point [CURRENT.md](CURRENT.md) at that folder. Copy `MILESTONE_SUMMARY.md`, `BOARD_SNAPSHOT.md`, and `implementation_artifacts/` into each new folder.
+Number folders `001_NAME/`. A draft folder may be renamed until [CURRENT.md](CURRENT.md) points at it. After it governs, the name stays. Replace the example milestone folder when the first real milestone exists, and point [CURRENT.md](CURRENT.md) at that folder. Copy `MILESTONE_SUMMARY.md`, `BOARD_SNAPSHOT.md`, and `implementation_artifacts/` into each new folder.
 
 ```text
 MILESTONES/
@@ -41,7 +41,7 @@ MILESTONES/
 
 `BOARD_SNAPSHOT.md` references the living boards in `EXPERIENCE_BOARDS/` and records their reviewed status. It does not duplicate board bodies. Use a `board_snapshot/` folder only when the milestone explicitly needs frozen archival copies.
 
-`implementation_artifacts/` holds milestone-specific translation artifacts. They turn approved emotional architecture into prototype build guidance. They are not method essays, raw discoveries, or Experience Boards. The folder may stay empty until the milestone produces build guidance.
+`implementation_artifacts/` holds milestone-specific translation artifacts. When `PROJECT.yaml` sets `experience_arc` to `true`, they turn approved emotional architecture into prototype build guidance. When it is `false`, the milestone can govern with a governance note, a build brief, and tickets, and without an arc. They are not method essays, raw discoveries, or Experience Boards. The folder may stay empty until the milestone produces build guidance. When `PROJECT.yaml` is missing, this copy predates init, and the arc files bind when they exist.
 
 Do not hardcode a milestone folder name in agent instructions. [CURRENT.md](CURRENT.md) names the governing milestone. Incoming implementation artifacts belong in that milestone's `implementation_artifacts/` folder.
 
@@ -72,11 +72,14 @@ When working from an HTDD milestone, read the milestone's `implementation_artifa
 Those named files are binding when they exist. The folder can be empty.
 
 Treat `IMPLEMENTATION_GOVERNANCE_NOTE.md` as the entrypoint.
-Treat `PROTOTYPE_STATE_MAP.md`, `TRANSITION_SPEC.md`, `GUARDRAIL_CHECKLIST.md`, and `PROTOTYPE_REVIEW_SCRIPT.md` as binding prototype governance.
 Treat `PROTOTYPE_BUILD_BRIEF.md` as the build-facing summary.
 Treat `PROTOTYPE_IMPLEMENTATION_TICKETS.md` as the ticket source, but do not implement tickets that conflict with the governance files.
 
-If `PROJECT_BOOTSTRAP.md` is incomplete and this milestone's implementation artifact chain is complete, proceed from the chain. Do not invent founder meaning to fill the bootstrap.
+`PROTOTYPE_STATE_MAP.md`, `TRANSITION_SPEC.md`, `GUARDRAIL_CHECKLIST.md`, and `PROTOTYPE_REVIEW_SCRIPT.md` bind only when `PROJECT.yaml` sets `experience_arc` to `true`. When it is `false`, those files are not required. Do not invent an arc, a beat, a gift, or an Arc Steward to fill them. When `PROJECT.yaml` is missing, they bind when they exist.
+
+Notes below that name an arc, a beat, a gift, Product Gravity, or an Arc Steward apply when `experience_arc` is `true`. When it is `false`, skip those notes. Exclusions, the status record, and the ticket completion classes still apply.
+
+If the bootstrap named in `PROJECT.yaml` is incomplete and this milestone's implementation artifact chain is complete, proceed from the chain. If `PROJECT.yaml` is missing, that bootstrap is `PROJECT_BOOTSTRAP.md`. Do not invent founder or team meaning to fill it.
 
 When markdown governance and code comments drift, markdown governance wins. Code comments are local implementation notes, not source-of-truth artifacts.
 

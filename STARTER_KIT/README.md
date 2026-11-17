@@ -35,9 +35,22 @@ Do not copy `FOUNDATIONS/`, `METHODOLOGY/`, the canonical `HUMAN_TRUTHS/` regist
 
    Change the path in that sentence if you chose a different destination.
 
-4. Start at `PROJECT_BOOTSTRAP.md`. Agents start at `AGENTS.md`.
+4. A person starts at `INIT.md` and answers there before either bootstrap. Agents start at `AGENTS.md`, which sends them to `INIT.md` while `PROJECT.yaml` is still unset.
 
 Do not copy this kit over a folder that already has project work.
+
+---
+
+## The first week
+
+`INIT.md` is the first sitting. It asks three questions and records the answers in `PROJECT.yaml`. A person answers. An agent may write the answer down and may not choose it.
+
+When all three values are set:
+
+1. Open only the bootstrap `INIT.md` names. `founder` uses `PROJECT_BOOTSTRAP.md`. `internal_b2b` uses `PROJECT_BOOTSTRAP_INTERNAL.md`. Leave the other file blank.
+2. Continue in `HUMAN_TRUTH_DISCOVERY.md`. Separate what someone lived from what the team infers.
+3. Copy `MILESTONES/001_EXAMPLE_MILESTONE` to a draft folder. Renaming that folder is fine until `MILESTONES/CURRENT.md` points at it.
+4. A human writes the exclusions this product binds. `CURRENT.md` stays at "None yet." until that list exists.
 
 ---
 
@@ -46,8 +59,11 @@ Do not copy this kit over a folder that already has project work.
 | File | Purpose |
 | --- | --- |
 | [SOURCE.md](SOURCE.md) | Origin of this copy and a pointer to the methodology |
+| [INIT.md](INIT.md) | First sitting. A person sets the project type |
+| [PROJECT.yaml](PROJECT.yaml) | Record of those answers. Agents do not infer them |
 | [AGENTS.md](AGENTS.md) | How agents find governing artifacts and avoid collisions |
-| [PROJECT_BOOTSTRAP.md](PROJECT_BOOTSTRAP.md) | Founder experience and meaning research |
+| [PROJECT_BOOTSTRAP.md](PROJECT_BOOTSTRAP.md) | Founder experience and meaning research. Used when `bootstrap` is `founder` |
+| [PROJECT_BOOTSTRAP_INTERNAL.md](PROJECT_BOOTSTRAP_INTERNAL.md) | Team, internal, and indirect-chain meaning research. Used when `bootstrap` is `internal_b2b` |
 | [HUMAN_TRUTH_DISCOVERY.md](HUMAN_TRUTH_DISCOVERY.md) | Draft workbook for evidence, candidate truths, and product principles |
 | [HUMAN_TRUTHS/](HUMAN_TRUTHS/) | This project's truths, not the canonical registry |
 | [PRODUCT_PRINCIPLES.md](PRODUCT_PRINCIPLES.md) | What this product must honor because of its truths |
@@ -62,6 +78,18 @@ Do not copy this kit over a folder that already has project work.
 ---
 
 ## For agents
+
+### Day one
+
+Start at [INIT.md](INIT.md) while any value in [PROJECT.yaml](PROJECT.yaml) is `unset` or unknown. Read only that page. A person answers. You may record the answer. You may not choose it, rank `skilled_builder` above `learning_the_ropes`, or nudge toward either label.
+
+`builder` is kept for later guidance. It does not choose the bootstrap, and it does not choose the artifact chain. Do not write a second set of rules from it.
+
+When the values are set, read only the bootstrap `INIT.md` names. Leave the other bootstrap as the blank template. Do not invent meaning to fill either page. Do not implement from `001_EXAMPLE_MILESTONE`.
+
+If `PROJECT.yaml` is missing, this copy was made before init. Absence is not `experience_arc: false`. Follow the governing rules below. Do not invent a `PROJECT.yaml` that turns the arc off. A person may add `INIT.md` and `PROJECT.yaml` later without overwriting filled work.
+
+### Once a milestone is governing
 
 Start at [AGENTS.md](AGENTS.md). Do not hardcode a milestone folder name.
 
@@ -88,11 +116,14 @@ When working from an HTDD milestone, read the milestone's `implementation_artifa
 Those named files are binding when they exist. The folder can be empty.
 
 Treat `IMPLEMENTATION_GOVERNANCE_NOTE.md` as the entrypoint.
-Treat `PROTOTYPE_STATE_MAP.md`, `TRANSITION_SPEC.md`, `GUARDRAIL_CHECKLIST.md`, and `PROTOTYPE_REVIEW_SCRIPT.md` as binding prototype governance.
 Treat `PROTOTYPE_BUILD_BRIEF.md` as the build-facing summary.
 Treat `PROTOTYPE_IMPLEMENTATION_TICKETS.md` as the ticket source, but do not implement tickets that conflict with the governance files.
 
-If `PROJECT_BOOTSTRAP.md` is incomplete and the governing milestone's implementation artifact chain is complete, proceed from that chain. Do not invent founder meaning to fill the bootstrap.
+`PROTOTYPE_STATE_MAP.md`, `TRANSITION_SPEC.md`, `GUARDRAIL_CHECKLIST.md`, and `PROTOTYPE_REVIEW_SCRIPT.md` bind only when `PROJECT.yaml` sets `experience_arc` to `true`. When it is `false`, those files are not required. Do not invent an arc, a beat, a gift, or an Arc Steward to fill them. When `PROJECT.yaml` is missing, they bind when they exist.
+
+Notes below that name an arc, a beat, a gift, Product Gravity, or an Arc Steward apply when `experience_arc` is `true`. When it is `false`, skip those notes. Exclusions, the status record, and the ticket completion classes still apply.
+
+If the named bootstrap is incomplete and the governing milestone's implementation artifact chain is complete, proceed from that chain. Do not invent founder or team meaning to fill the bootstrap.
 
 When markdown governance and code comments drift, markdown governance wins. Code comments are local implementation notes, not source-of-truth artifacts.
 
@@ -130,7 +161,7 @@ cp -R HUMAN_TRUTHS/.  path/to/docs/htdd/METHOD/HUMAN_TRUTHS/
 cp -R DISCOVERIES/.   path/to/docs/htdd/METHOD/DISCOVERIES/
 ```
 
-**Kit templates.** If the starter kit later adds a root folder or new fields on a blank template, compare `STARTER_KIT/` at a newer commit with this folder. Copy only new blank files or empty sections. Never overwrite filled `PROJECT_BOOTSTRAP.md`, project truths, boards, discoveries, milestones, or lessons. Then update the date and commit in `SOURCE.md`.
+**Kit templates.** If the starter kit later adds a root folder or new fields on a blank template, compare `STARTER_KIT/` at a newer commit with this folder. Copy only new blank files or empty sections. Never overwrite filled `PROJECT_BOOTSTRAP.md`, `PROJECT_BOOTSTRAP_INTERNAL.md`, `PROJECT.yaml`, project truths, boards, discoveries, milestones, or lessons. Then update the date and commit in `SOURCE.md`.
 
 **Do not** copy the whole kit over this folder again. That would erase project work.
 
@@ -139,5 +170,7 @@ cp -R DISCOVERIES/.   path/to/docs/htdd/METHOD/DISCOVERIES/
 Projects that already copied the kit do not receive later operating rules by refreshing `METHOD/`.
 
 Add `MILESTONES/CURRENT.md`, `MILESTONES/AREAS.md`, and `MILESTONES/RELEASE_LOG.md` if they are missing. Point `CURRENT.md` only after the new milestone names the exclusions this product binds. Replace any `AGENTS.md` that hardcodes a milestone folder with the current `AGENTS.md`. If an older copy tells every project to bind another product's exclusions, replace that sentence with this product's own list. Do not overwrite filled milestone work.
+
+A copy that already governs does not need `PROJECT.yaml` to keep going. Missing `PROJECT.yaml` is not `experience_arc: false`. A person may add `INIT.md` and `PROJECT.yaml` beside the filled bootstrap and set `bootstrap` to match the page already in use. Do not overwrite that page, and do not invent `experience_arc: false` for a milestone that already uses the arc files.
 
 Methodology: https://github.com/gerardoramirez/htdd

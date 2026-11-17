@@ -2,7 +2,7 @@
 
 This folder holds milestone-specific translation artifacts.
 
-They turn the approved emotional architecture of this milestone into prototype build guidance.
+When `PROJECT.yaml` sets `experience_arc` to `true`, they turn the approved emotional architecture of this milestone into prototype build guidance. When it is `false`, this folder does not need an arc. When `PROJECT.yaml` is missing, this copy predates init, and the arc files bind when they exist.
 
 They are not:
 
@@ -12,17 +12,26 @@ They are not:
 
 The folder may stay empty until this milestone produces build guidance. Do not add files here just to fill the pattern.
 
-A later milestone may add some or all of these files:
+A later milestone may add some or all of these files.
+
+Every milestone that produces build guidance:
 
 | File | Role |
 | --- | --- |
 | `IMPLEMENTATION_GOVERNANCE_NOTE.md` | Entrypoint |
+| `PROTOTYPE_BUILD_BRIEF.md` | Build-facing summary |
+| `PROTOTYPE_IMPLEMENTATION_TICKETS.md` | Ticket source |
+
+Only when `PROJECT.yaml` sets `experience_arc` to `true`. When it is `false`, the files in this second group are not required. Do not invent them. When `PROJECT.yaml` is missing, they bind when they exist.
+
+| File | Role |
+| --- | --- |
 | `PROTOTYPE_STATE_MAP.md` | Binding prototype governance |
 | `TRANSITION_SPEC.md` | Binding prototype governance |
 | `GUARDRAIL_CHECKLIST.md` | Binding prototype governance |
 | `PROTOTYPE_REVIEW_SCRIPT.md` | Binding prototype governance |
-| `PROTOTYPE_BUILD_BRIEF.md` | Build-facing summary |
-| `PROTOTYPE_IMPLEMENTATION_TICKETS.md` | Ticket source |
+
+Notes below that name an arc, a beat, a gift, Product Gravity, or an Arc Steward apply when `experience_arc` is `true`. When it is `false`, skip those notes. Exclusions, the status record, and the ticket completion classes still apply.
 
 Copy this README into each new milestone's `implementation_artifacts/` folder.
 
@@ -83,6 +92,7 @@ When working from an HTDD milestone, read the milestone's `implementation_artifa
 Those named files are binding when they exist. The folder can be empty.
 
 Treat `IMPLEMENTATION_GOVERNANCE_NOTE.md` as the entrypoint.
-Treat `PROTOTYPE_STATE_MAP.md`, `TRANSITION_SPEC.md`, `GUARDRAIL_CHECKLIST.md`, and `PROTOTYPE_REVIEW_SCRIPT.md` as binding prototype governance.
 Treat `PROTOTYPE_BUILD_BRIEF.md` as the build-facing summary.
 Treat `PROTOTYPE_IMPLEMENTATION_TICKETS.md` as the ticket source, but do not implement tickets that conflict with the governance files.
+
+`PROTOTYPE_STATE_MAP.md`, `TRANSITION_SPEC.md`, `GUARDRAIL_CHECKLIST.md`, and `PROTOTYPE_REVIEW_SCRIPT.md` bind only when `PROJECT.yaml` sets `experience_arc` to `true`. When it is `false`, those files are not required. When `PROJECT.yaml` is missing, they bind when they exist.

@@ -1,0 +1,6 @@
+schema_version: 1
+# A person sets these through INIT.md. An agent may record an answer and may not choose it.
+# Leave a value as unset until that question is answered. An unknown value is a stop.
+builder: unset          # skilled_builder | learning_the_ropes
+bootstrap: unset        # founder | internal_b2b
+experience_arc: unset   # true | false

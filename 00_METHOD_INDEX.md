@@ -46,7 +46,7 @@ Copy [STARTER_KIT/](STARTER_KIT/README.md) into the product repository. The prod
 
 Use [Project Structure](METHODOLOGY/PROJECT_STRUCTURE.md) for the workspace layout and the draft [Human Truth Discovery Workbook](STARTER_KIT/HUMAN_TRUTH_DISCOVERY.md) to separate evidence from candidate truths and product principles.
 
-Agents start at `AGENTS.md`. Founders start at `PROJECT_BOOTSTRAP.md`.
+On a new copy, a person starts at [INIT.md](STARTER_KIT/INIT.md). The answers live in [PROJECT.yaml](STARTER_KIT/PROJECT.yaml). Agents start at `AGENTS.md`, which sends them to `INIT.md` until those answers are set. The bootstrap that page names is the next file: [PROJECT_BOOTSTRAP.md](STARTER_KIT/PROJECT_BOOTSTRAP.md) or [PROJECT_BOOTSTRAP_INTERNAL.md](STARTER_KIT/PROJECT_BOOTSTRAP_INTERNAL.md).
 
 ## Drafts
 

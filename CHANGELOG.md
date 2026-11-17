@@ -2,7 +2,14 @@
 
 Dated practice summaries live in [REVISIONS/](REVISIONS/README.md).
 
-Latest: [2026-11-16](REVISIONS/2026-11-16.md).
+Latest: [2026-11-17](REVISIONS/2026-11-17.md).
+
+## Project init (2026-11-17)
+
+- A new starter-kit copy begins at `INIT.md`. A person sets `builder`, `bootstrap`, and `experience_arc` in `PROJECT.yaml`. An agent may record the answers and may not choose them.
+- `internal_b2b` opens a team bootstrap. It names the direct user and the person at the far end, and it asks for a person before a capability.
+- `experience_arc: false` lets a milestone govern without the arc files. A missing `PROJECT.yaml` on an older copy is not that setting.
+- The builder label is recorded for later guidance. It does not change the path.
 
 ## Public method beta (2026-11-16)
 

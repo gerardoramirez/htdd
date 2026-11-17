@@ -47,7 +47,11 @@ This milestone is governed by:
 
 ## Governance notes
 
+Read `PROJECT.yaml` at the kit root. When `experience_arc` is `false`, write here that this milestone is not an experience arc. Arc files are not required. When it is `true`, the arc chain applies. When `PROJECT.yaml` is missing, the arc chain applies when those files exist.
+
 ## Open questions
+
+Mark a line that is not yet answered with `[open]`. An agent must not close an `[open]` by writing an answer.
 
 ## Next workstream
 
@@ -55,9 +59,21 @@ This milestone is governed by:
 
 Write an entry here when this milestone is completed, and again when it is materially updated. Copy the same entry to `MILESTONES/RELEASE_LOG.md`. Newest first.
 
-This folder is a template. It is not governing. Copy it, then write the still-in-force list below before pointing `CURRENT.md` at the copy.
+This folder is a template. It is not governing. Copy it, then write the still-in-force list below before pointing `CURRENT.md` at the copy. A draft folder may be renamed until `CURRENT.md` points at it. After it governs, the name stays.
 
-That list names the exclusions this product binds. A later milestone restates the exclusions that remain from its predecessor, or names the predecessor file in `MILESTONES/AREAS.md`. A sentence that only names the predecessor is not that list. A first milestone names the exclusions it binds. Do not copy another product's exclusions into the list. Leave the list blank in this template.
+That list names the exclusions this product binds. A later milestone restates the exclusions that remain from its predecessor, or names the predecessor file in `MILESTONES/AREAS.md`. A sentence that only names the predecessor is not that list. A first milestone names the exclusions it binds. Do not copy another product's exclusions into the list.
+
+A human writes the first list. These questions are a way in:
+
+- What must this product refuse, even when the refusal would be useful?
+- What ordinary move would betray the person at the far end, or the person whose life this product is for?
+- What sits outside this milestone, even when it belongs to the product later?
+
+Illustration only. Do not copy these sentences into a product. They are not another product's list, and they are not a case study.
+
+A portal used by people at partner companies, with a person at the far end who never signs in, might refuse to treat the signed-in person's convenience as the only human outcome, to send or commit on that partner's behalf without a person there keeping the last word, and to spend the first milestone on a second audience.
+
+Leave the list blank in this template.
 
 ### YYYY-MM-DD
 
