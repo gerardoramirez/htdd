@@ -2,7 +2,14 @@
 
 Dated practice summaries live in [REVISIONS/](REVISIONS/README.md).
 
-Latest: [2026-11-17](REVISIONS/2026-11-17.md).
+Latest: [2026-11-19](REVISIONS/2026-11-19.md).
+
+## Adoption on an existing product (2026-11-19)
+
+- The internal bootstrap names direct users, internal users, and the person at the far end, and asks what each must never reach. An experience that was not lived is written as an inference.
+- A milestone Deferred section records a decision to do something later. It is separate from exclusions, open questions, and deferred validation.
+- A product that already exists labels prior work as baseline, evidence, or governing. Specs keep what and how. The kit keeps why and guardrails.
+- `SOURCE.md` records where the copy's commit hash comes from, and the product README sentence the kit expects.
 
 ## Project init (2026-11-17)
 

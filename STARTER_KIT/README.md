@@ -50,7 +50,7 @@ When all three values are set:
 1. Open only the bootstrap `INIT.md` names. `founder` uses `PROJECT_BOOTSTRAP.md`. `internal_b2b` uses `PROJECT_BOOTSTRAP_INTERNAL.md`. Leave the other file blank.
 2. Continue in `HUMAN_TRUTH_DISCOVERY.md`. Separate what someone lived from what the team infers.
 3. Copy `MILESTONES/001_EXAMPLE_MILESTONE` to a draft folder. Renaming that folder is fine until `MILESTONES/CURRENT.md` points at it.
-4. A human writes the exclusions this product binds. `CURRENT.md` stays at "None yet." until that list exists.
+4. A human writes the exclusions this product binds. `CURRENT.md` stays at "None yet." until that list exists. A decision to do something later is written under Deferred on the milestone summary. It is not an exclusion.
 
 ---
 
@@ -87,6 +87,8 @@ Start at [INIT.md](INIT.md) while any value in [PROJECT.yaml](PROJECT.yaml) is `
 
 When the values are set, read only the bootstrap `INIT.md` names. Leave the other bootstrap as the blank template. Do not invent meaning to fill either page. Do not implement from `001_EXAMPLE_MILESTONE`.
 
+If the repository already contains a product, read [When the product already exists](#when-the-product-already-exists). Do not fill the bootstrap from the code. Do not treat an existing spec as governing, or as the answer to an `[open]`.
+
 If `PROJECT.yaml` is missing, this copy was made before init. Absence is not `experience_arc: false`. Follow the governing rules below. Do not invent a `PROJECT.yaml` that turns the arc off. A person may add `INIT.md` and `PROJECT.yaml` later without overwriting filled work.
 
 ### Once a milestone is governing
@@ -104,6 +106,8 @@ If `AGENTS.md` names a milestone folder, or tells an agent to sort `MILESTONES/`
 If `MILESTONES/CURRENT.md` does not name a real milestone folder, stop. `001_EXAMPLE_MILESTONE` is a template. It is not governing.
 
 A milestone cannot become governing until it has `MILESTONE_SUMMARY.md` and a short still-in-force list. That list names the exclusions this product binds. A later milestone restates the exclusions that remain from its predecessor, or names the predecessor file in [MILESTONES/AREAS.md](MILESTONES/AREAS.md). A sentence that only names the predecessor is not that list. A first milestone names the exclusions it binds. Do not point `CURRENT.md` at the folder until that list is written. Do not copy another product's exclusions into the list.
+
+A Deferred section is a decision to do something later. Do not build it inside the governing milestone, and do not move it into the still-in-force list. It is not an `[open]` line, and it is not deferred validation in the status record.
 
 A quality pass restates the milestone's job. A quality-pass milestone cannot add a surface, collection, access path, invitation channel, or discovery query. If the work needs one, stop. Open a new milestone first. This is an implementation stop.
 
@@ -165,11 +169,31 @@ cp -R DISCOVERIES/.   path/to/docs/htdd/METHOD/DISCOVERIES/
 
 **Do not** copy the whole kit over this folder again. That would erase project work.
 
+## When the product already exists
+
+The copy steps above still apply. Do not copy this kit over a folder that already has project work. The bootstrap does not have to narrate the app that is already running.
+
+A person may label what is already in the repository. An agent does not choose the label.
+
+- **Baseline.** The product that already runs, and the documents that describe it. Baseline is not a Human Truth, and it is not a milestone decision.
+- **Evidence.** Something a person lived, or the team observed. It can be cited from `HUMAN_TRUTH_DISCOVERY.md`. Age does not make it governing.
+- **Governing.** Only what a milestone names: the truth sources, the principles, and the exclusions. An existing spec, ticket, or design document does not govern because it is present.
+
+Why and guardrails live in this folder. What the product does, and how it is built, stay in the product's own specs. Those specs remain the source for mechanism. They do not choose the milestone.
+
+If a spec disagrees with an exclusion or a principle, stop and ask a person. Do not fill the bootstrap from the code. Do not treat the code as the answer to an `[open]`.
+
+Classifying old documents is not a gate. A milestone still governs only after a human writes the still-in-force list.
+
 ## Existing product repositories
+
+This note is for a copy that already has the kit. A product that predates the kit follows [When the product already exists](#when-the-product-already-exists).
 
 Projects that already copied the kit do not receive later operating rules by refreshing `METHOD/`.
 
 Add `MILESTONES/CURRENT.md`, `MILESTONES/AREAS.md`, and `MILESTONES/RELEASE_LOG.md` if they are missing. Point `CURRENT.md` only after the new milestone names the exclusions this product binds. Replace any `AGENTS.md` that hardcodes a milestone folder with the current `AGENTS.md`. If an older copy tells every project to bind another product's exclusions, replace that sentence with this product's own list. Do not overwrite filled milestone work.
+
+A later kit may add a blank Deferred heading, or room on the internal bootstrap for more than one audience. Copy those empty lines by hand. Do not overwrite a filled bootstrap, a filled exclusion list, or a decision a person already wrote. Do not invent an audience, a boundary, or a deferral to fill them.
 
 A copy that already governs does not need `PROJECT.yaml` to keep going. Missing `PROJECT.yaml` is not `experience_arc: false`. A person may add `INIT.md` and `PROJECT.yaml` beside the filled bootstrap and set `bootstrap` to match the page already in use. Do not overwrite that page, and do not invent `experience_arc: false` for a milestone that already uses the arc files.
 

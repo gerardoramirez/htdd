@@ -61,6 +61,8 @@ If `CURRENT.md` does not name a real milestone folder, stop. `001_EXAMPLE_MILEST
 
 A milestone cannot become governing until it has `MILESTONE_SUMMARY.md` and a short still-in-force list. That list names the exclusions this product binds. A later milestone restates the exclusions that remain from its predecessor, or names the predecessor file in `AREAS.md`. A sentence that only names the predecessor is not that list. A first milestone names the exclusions it binds. Do not point `CURRENT.md` at the folder until that list is written. Do not copy another product's exclusions into the list.
 
+A Deferred section on the milestone summary is a decision to do something later. Do not build it inside the governing milestone, and do not move it into the still-in-force list. It is not an `[open]` line, and it is not deferred validation in the status record.
+
 A quality pass restates the milestone's job. A quality-pass milestone cannot add a surface, collection, access path, invitation channel, or discovery query. If the work needs one, stop. Open a new milestone first. This is an implementation stop.
 
 Read the milestone's `MILESTONE_SUMMARY.md`, including its release entries, for governing root truth sources, and `BOARD_SNAPSHOT.md` for the reviewed state of `EXPERIENCE_BOARDS/`. Do not treat milestone files as replacements for those root artifacts.
@@ -97,7 +99,7 @@ When a milestone is completed, or materially updated, write a short entry under 
 
 Each entry names the date, the folder, and the kind: completed or updated. The work is a few sentences. It names areas touched. It does not copy tickets, specs, or board bodies.
 
-On completion, say what is still in force, or which living root file absorbed it: a principle, a board, or a lesson. Name the predecessor folder when this milestone replaced one. A sentence that only names the predecessor is not that list. The list names the exclusions this product binds. A first milestone names the exclusions it binds. Do not copy another product's exclusions into the list.
+On completion, say what is still in force, or which living root file absorbed it: a principle, a board, or a lesson. Name the predecessor folder when this milestone replaced one. A sentence that only names the predecessor is not that list. The list names the exclusions this product binds. A first milestone names the exclusions it binds. Do not copy another product's exclusions into the list. A decision to do something later stays in the Deferred section. It is not an exclusion, and it is not deferred validation in the status record.
 
 `RELEASE_LOG.md` holds only the governing milestone. Build work reads the milestone, not the log.
 

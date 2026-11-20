@@ -10,7 +10,7 @@ Mark any line you cannot answer yet with `[open]`. Leave it open. An agent must 
 
 What situation prompted the work? Who experiences it, and in what context?
 
-When `bootstrap` is `internal_b2b`, name the direct user and the person at the far end. The person at the far end may never open the product. If they are the same person, say so.
+When `bootstrap` is `internal_b2b`, name the direct users, any internal users, and the person at the far end. Use only the kinds that exist. The owning team is not automatically a user. The person at the far end may never open the product. If you have not lived their experience, label what you write as an inference. If they are the same person, say so.
 
 Write here:
 
@@ -46,7 +46,7 @@ Write here:
 
 What moment would express that principle? What positive designed object replaces an ordinary product move you refuse? What observable signal would support or challenge the design?
 
-When `bootstrap` is `internal_b2b`, the moment may be a task the direct user performs for a person who never opens the product. Name both people. When `experience_arc` is `false`, describe the operational moment. An emotional arc is not required on this page.
+When `bootstrap` is `internal_b2b`, the moment may be a task a direct user, or an internal user, performs for a person who never opens the product. Name each person that moment includes. When `experience_arc` is `false`, describe the operational moment. An emotional arc is not required on this page.
 
 Record the decision, alternatives, uncertainty, and references to the evidence, candidate truth, principle, and eventual Experience Board.
 

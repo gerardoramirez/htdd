@@ -8,6 +8,7 @@ Write one file per day when the work is large enough to lose. Name it `YYYY-MM-D
 
 | Date | Summary |
 | --- | --- |
+| [2026-11-19](2026-11-19.md) | A product that already exists can take the kit, a team can name more than two people, and a milestone can record a decision to do something later |
 | [2026-11-17](2026-11-17.md) | A new kit copy starts at three questions, and a team can govern a milestone without an experience arc |
 | [2026-11-16](2026-11-16.md) | The portable rules name each product's own exclusions, and the public method states what a beta reader may rely on |
 | [2026-11-01](2026-11-01.md) | A stale agent file stops the build, and a milestone governs only after it restates what still binds |

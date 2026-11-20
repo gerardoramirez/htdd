@@ -18,9 +18,13 @@ If `PROJECT.yaml` is missing, this copy was made before init. Do not treat the a
 
 An `[open]` mark is an unanswered line. Do not close it by writing an answer.
 
+A Deferred section on a milestone is a decision to do something later. Do not fill it. Do not build that item inside the governing milestone. Do not move it into the still-in-force list, and do not close it as answered. It is not an exclusion, it is not an `[open]` line, and it is not deferred validation in the status record. A person makes it current by writing it into a later milestone.
+
 ## Day one
 
 Before a governing milestone exists, follow `INIT.md`, then only the bootstrap it names, then `HUMAN_TRUTH_DISCOVERY.md`. Do not implement from `001_EXAMPLE_MILESTONE`. A draft milestone folder may be renamed until `MILESTONES/CURRENT.md` points at it.
+
+If the product already exists, read "When the product already exists" in `README.md`. The running product is baseline. Something a person lived is evidence. Only what a milestone names is governing. An existing spec keeps what the product does and how it is built. It does not choose the milestone. Do not fill the bootstrap from the code. Do not treat the code, or a spec, as the answer to an `[open]`. If a spec disagrees with an exclusion or a principle, stop and ask a person.
 
 ## Once a milestone is governing
 
@@ -37,6 +41,8 @@ If this file names a milestone folder, or tells an agent to sort `MILESTONES/`, 
 If `MILESTONES/CURRENT.md` says there is no governing milestone yet, stop. The example folder shipped with the kit is a template. Do not implement from it.
 
 A milestone cannot become governing until it has `MILESTONE_SUMMARY.md` and a short still-in-force list. That list names the exclusions this product binds. A later milestone restates the exclusions that remain from its predecessor, or names the predecessor file in `MILESTONES/AREAS.md`. A sentence that only names the predecessor is not that list. A first milestone names the exclusions it binds. Do not point `CURRENT.md` at the folder until that list is written. Do not copy another product's exclusions into the list.
+
+Do not build a Deferred item inside that milestone, and do not rewrite it as an exclusion to make the list easier to finish.
 
 A quality pass restates the milestone's job. A quality-pass milestone cannot add a surface, collection, access path, invitation channel, or discovery query. If the work needs one, stop. Open a new milestone first. This is an implementation stop.
 

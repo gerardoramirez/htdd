@@ -53,6 +53,16 @@ Read `PROJECT.yaml` at the kit root. When `experience_arc` is `false`, write her
 
 Mark a line that is not yet answered with `[open]`. An agent must not close an `[open]` by writing an answer.
 
+## Deferred
+
+A decision to do something later. This is not an exclusion, and it is not an `[open]` line. It is not the Deferred validation line in the status record.
+
+Leave this blank until a person writes the decision. An agent must not fill it, must not build it inside this milestone, and must not move it into the still-in-force list or close it as answered. A person makes it current by writing it into a later milestone.
+
+- What is postponed
+- Why it waits
+- What would make it current
+
 ## Next workstream
 
 ## Release
@@ -67,7 +77,8 @@ A human writes the first list. These questions are a way in:
 
 - What must this product refuse, even when the refusal would be useful?
 - What ordinary move would betray the person at the far end, or the person whose life this product is for?
-- What sits outside this milestone, even when it belongs to the product later?
+
+A decision to do something later belongs under Deferred, above. It is not an exclusion.
 
 Illustration only. Do not copy these sentences into a product. They are not another product's list, and they are not a case study.
 
